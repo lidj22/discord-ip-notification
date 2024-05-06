@@ -1,5 +1,5 @@
 # Discord IP Notification
-Send a notification to Discord about the host machine's current IP address.
+Send a notification to a Discord room about the host machine's current public IP address.
 
 **Requirements**: Linux, Docker
 
