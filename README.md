@@ -17,13 +17,13 @@ A notification should pop up in the corresponding Discord room.
 ### Cronjob (Daily Notifications)
 > Set up a cronjob to run this everyday.
 
-Create script `/root/send_ip_notification.sh`.
+Create script `/root/send_ip_notification.sh` (run this to send a notification manually):
 ```shell
 #!/usr/bin/bash
 WEBHOOK_URL="your_webhook_url"
 docker run -e WEBHOOK_URL=$WEBHOOK_URL ghcr.io/lidj22/discord-ip-notification
 ```
-Run `chmod +x /root/send_ip_notification.sh`, and add to `crontab`:
+Run `chmod 700 /root/send_ip_notification.sh`, and add to `crontab`:
 ```
 0 * * * * /root/send_ip_notification_.sh
 ```
