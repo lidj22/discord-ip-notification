@@ -3,6 +3,20 @@ Send a notification to Discord about the host machine's current IP address.
 
 **Requirements**: Linux, Docker
 
+## Install
+
+```sh
+docker pull ghcr.io/lidj22/discord-ip-notification
+```
+
+Run (ensure Discord webhook URL is included):
+```sh
+docker run -e WEBHOOK_URL=$WEBHOOK_URL ghcr.io/lidj22/discord-ip-notification
+```
+A notification should pop up in the corresponding Discord room.
+
+## Install from Source
+
 Build the Docker image.
 ```sh
 docker build -t discord-ip-notification .
