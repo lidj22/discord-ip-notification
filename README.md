@@ -25,7 +25,7 @@ docker run -e WEBHOOK_URL=$WEBHOOK_URL ghcr.io/lidj22/discord-ip-notification
 ```
 Run `chmod 700 /root/send_ip_notification.sh`, and add to `crontab`:
 ```
-0 0 * * * /root/send_ip_notification_.sh
+0 0 * * * /root/send_ip_notification.sh
 ```
 
 ## Build from Source
